@@ -10,6 +10,6 @@ if (privateKey === undefined) {
 
 const asArray = Uint8Array.from(JSON.parse(privateKey));
 
-const keypair = Keypair.fromSecretKey(asArray);
+export const keypair = Keypair.fromSecretKey(asArray);
 
 console.log(`Public key: ${keypair.publicKey.toBase58()}`);
